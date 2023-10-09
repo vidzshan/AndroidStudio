@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/thumbnail">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:layout_margin="50dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:id="@+id/welcome"
+        />
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+        android:drawablePadding="20dp"
+        android:hint="First Name"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@id/welcome"
+        />
+    <EditText
+        android:id="@+id/Lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#30ffffff"
+        android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+        android:drawablePadding="20dp"
+        android:hint="Last Name"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_below="@id/fname"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Say Hi"
+        android:textSize="20dp"
+        android:background="#6AE33D3D"
+        android:textStyle="bold"
+        android:layout_below="@+id/Lname"
+        android:layout_margin="50dp"
+        android:padding="20px"
+        android:id="@+id/next"/>
+
+    <TextView
+        android:id="@+id/sayhi"
+        android:text="Hi"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/next"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/displayText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sayhi"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        />
+
+</RelativeLayout>
