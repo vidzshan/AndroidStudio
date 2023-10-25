@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal"
+    android:padding="10sp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/thumbnailIv"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:background="@color/gray"
+        android:src="@drawable/baseline_person_24"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstnameEt"
+        android:layout_marginTop="5sp"
+        android:background="@color/white"
+        android:inputType="textPersonName"
+        android:textColor="@color/blue"
+        android:layout_below="@+id/thumbnailIv"
+        android:hint="First Name"
+        android:padding="10sp"
+        android:textStyle="bold"
+        android:textColorHint="#7CA65E5E"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastnameEt"
+        android:layout_marginTop="5sp"
+        android:background="@color/white"
+        android:inputType="textPersonName"
+        android:textColor="@color/blue"
+        android:layout_below="@+id/firstnameEt"
+        android:hint="Last Name"
+        android:padding="10sp"
+        android:textStyle="bold"
+        android:textColorHint="#7CA65E5E"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phoneMobileEt"
+        android:layout_marginTop="5sp"
+        android:background="@color/white"
+        android:inputType="phone"
+        android:textColor="@color/blue"
+        android:layout_below="@+id/lastnameEt"
+        android:hint="Phone (Mobile)"
+        android:padding="10sp"
+        android:textStyle="bold"
+        android:textColorHint="#7CA65E5E"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/baseline_check_24"
+        android:layout_margin="10sp"/>
+
+</RelativeLayout>

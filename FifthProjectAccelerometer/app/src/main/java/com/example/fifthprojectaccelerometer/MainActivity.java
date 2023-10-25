@@ -64,7 +64,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
     }
 
-    // Method to make the phone call
     private void makePhoneCall() {
         Intent callIntent = new Intent(Intent.ACTION_CALL);
         callIntent.setData(Uri.parse("tel:0764304402")); // Change the number to the desired phone number
